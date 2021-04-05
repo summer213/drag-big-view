@@ -1,0 +1,41 @@
+<template>
+  <div id="app">
+    <router-view />
+  </div>
+</template>
+
+<style lang="scss">
+  
+  ::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+    box-shadow: inset 0 0 0 5px hsla(0, 0%, 15%, 0.2);
+  }
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    border-radius: 999px;
+    border: 5px solid transparent;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.2);
+  }
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-track {
+    border-radius: 999px;
+    border: 5px solid transparent;
+  }
+  
+</style>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
