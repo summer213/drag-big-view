@@ -161,8 +161,15 @@ export const asyncRoutes = [
   {
     path: '/protocol_setting',
     name: 'Icons',
-    meta: { title: '通信协议配置', icon: 'el-icon-pie-chart' },
-    component: () => import('@/views/bigScreen/editBigScreenPage')
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/protocolSetting/protocol_setting'),
+        name: 'deviceManagement',
+        meta: { title: '通信协议配置', icon: 'el-icon-setting' }
+      }
+    ]
   },
   {
     path: '/dev',
